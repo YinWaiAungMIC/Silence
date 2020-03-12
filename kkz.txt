@@ -1,0 +1,93 @@
+Microsoft Windows [Version 10.0.18362.657]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\HP\Desktop\HTML>git clone https://github.com/YinWaiAungMIC/Silence.git
+Cloning into 'Silence'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 617 bytes | 5.00 KiB/s, done.
+
+C:\Users\HP\Desktop\HTML>cd Silence/
+
+C:\Users\HP\Desktop\HTML\Silence>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        kyawkhantzin.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\HP\Desktop\HTML\Silence>git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+C:\Users\HP\Desktop\HTML\Silence>git add .
+
+C:\Users\HP\Desktop\HTML\Silence>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   kyawkhantzin.html
+
+
+C:\Users\HP\Desktop\HTML\Silence>git commit -m "Added new file kyawkhantzin.html"
+[master 412245a] Added new file kyawkhantzin.html
+ 1 file changed, 9 insertions(+)
+ create mode 100644 kyawkhantzin.html
+
+C:\Users\HP\Desktop\HTML\Silence>git remote
+origin
+
+C:\Users\HP\Desktop\HTML\Silence>git push origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com':
+Password for 'https://github.com':
+remote: No anonymous write access.
+fatal: Authentication failed for 'https://github.com/YinWaiAungMIC/Silence.git/'
+
+C:\Users\HP\Desktop\HTML\Silence>git push origin master
+remote: Permission to YinWaiAungMIC/Silence.git denied to KyawKhantZinMIC2020.
+fatal: unable to access 'https://github.com/YinWaiAungMIC/Silence.git/': The requested URL returned error: 403
+
+C:\Users\HP\Desktop\HTML\Silence>git push origin master
+To https://github.com/YinWaiAungMIC/Silence.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/YinWaiAungMIC/Silence.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\HP\Desktop\HTML\Silence>git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 368 bytes | 3.00 KiB/s, done.
+From https://github.com/YinWaiAungMIC/Silence
+   958f080..6da57b5  master     -> origin/master
+Merge made by the 'recursive' strategy.
+ yinwaiaung.html | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+ create mode 100644 yinwaiaung.html
+
+C:\Users\HP\Desktop\HTML\Silence>git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 665 bytes | 332.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/YinWaiAungMIC/Silence.git
+   6da57b5..b422e14  master -> master
+
+C:\Users\HP\Desktop\HTML\Silence>
