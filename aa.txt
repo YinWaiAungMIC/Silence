@@ -1,0 +1,7 @@
+select d.deptNo,deptName,e.empNo,salary
+FROM department d,employee e
+WHERE d.deptNo=e.deptNo;
+
+SELECT d.deptNo,deptName,empNo,salary
+FROM department AS d RIGHT JOIN employee AS e
+ON d.deptNo=e.deptNo;
